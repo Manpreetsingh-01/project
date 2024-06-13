@@ -1,6 +1,4 @@
-const apiKey = "e0f673ce6c82c0d88c26a0e9c361a168";
-// const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=&lon=&appid=e0f673ce6c82c0d88c26a0e9c361a168`;
-// https://api.openweathermap.org/data/2.5/weather?units=metric&q=
+const apiKey = "";
 const searchBox = document.body.querySelector(".input");
 const searchBtn = document.body.querySelector(".btn");
 const weatherIcon = document.body.querySelector(".weather-icon");
@@ -10,7 +8,7 @@ function success(pos) {
   lng = pos.coords.longitude;
   console.log(lat, lng);
 
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=e0f673ce6c82c0d88c26a0e9c361a168`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${apiKey}`;
 
   async function checkWeather(city) {
     const respone = await fetch(apiUrl + city + `&appid=${apiKey}`);
