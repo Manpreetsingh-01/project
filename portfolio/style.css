@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo' , sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    object-fit: cover;
+    object-position: top;
+}
+nav{
+    padding: 20px 148px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+nav .nav-link {
+    display: flex;
+    gap: 15px;
+    font-weight: 500;
+}
+
+nav .nav-link a:hover,
+nav .nav-link a.selected{
+    color: blue;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 148px;
+    height: 600px;
+    gap: 50px;
+}
+
+.main .content h1{
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+.main .content h1 b{
+    color: rgb(99, 99, 235);
+}
+
+.main-img img{
+    height: 350px;
+    width: 400px;
+    margin-top: -45px;
+}
+.main .content p{
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.main .content button{
+    font-weight: 500;
+    font-size: 15px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 10px;
+    border: #fff;
+    padding: 7px;
+}
+
+.main .content button:hover{
+    background-color: rgb(74, 74, 228);
+}
+
+.projects{
+    padding: 0px 148px;
+    padding-top: 50px;
+}
+
+.projects h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.projects .project-bg{
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(234, 228, 228);
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+.project-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-bg h5{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.project-img img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+p{
+    padding: 25px;
+    font-size: 15px;
+    height: 200px;
+    overflow: hidden;
+}
+.helo{
+    background-color: transparent;
+    border: none;
+    margin-left: 600px;
+
+}
+
+.helo:hover{
+    background-color: rgb(204, 204, 204);
+}

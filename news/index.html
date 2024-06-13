@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Click</button>
+    <h1></h1>
+    <img src="" alt="" />
+    <p></p>
+    <a href=""><button id="read">read more</button></a>
+    <script>
+      const btn = document.querySelector("#btn");
+      let index = Math.floor(Math.random() * 9);
+
+      const getNews = async () => {
+        let response = await fetch(
+          "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=ba94026789d24f6fac936d2812d9b30e"
+        );
+
+        let data = await response.json();
+        console.log(data);
+        document.querySelector("h1").innerText = data.articles[index].title;
+        document.querySelector("img").src = data.articles[index].urlToImage;
+        document.querySelector("p").innerText = data.articles[index].content;
+        document.querySelector("#read").addEventListener("click", () => {
+          document.querySelector("a").href = data.articles[index].url;
+        });
+      };
+      // btn.addEventListener("click", () => {
+      //   getNews();
+      // });
+
+      window.onload = getNews();
+    </script>
+  </body>
+</html>

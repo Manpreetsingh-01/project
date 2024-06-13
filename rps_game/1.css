@@ -1,0 +1,62 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#heading{
+    height: 3rem;
+    background-color: #37505C;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+#gameScore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.scores{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.score{
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+
+#printMsg{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: -40px;
+
+}
+#msg{
+    font-size: 2rem;
+    background-color: #37505C;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+
+}
